@@ -30,4 +30,11 @@ for paso in range(1, 11): # La variable paso es unicamente para el for.
 "Hola!"
 
 # F-string
-f"Hola {pasos_a_dar}"
+variable = f"Hola {pasos_a_dar}"
+
+
+naranjas = ["madura", "verde", "pasada", "podrida"]
+
+for naranja in naranjas:
+    if naranja == "podrida":
+        print("Naranja podrida")
