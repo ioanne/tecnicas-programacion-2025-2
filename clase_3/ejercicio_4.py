@@ -27,7 +27,9 @@ for paso in range(1, 11): # La variable paso es unicamente para el for.
 # Acá no podemos usar mas la variable paso
 
 # Strings
-"Hola!"
+"Hola!" + " mundo"
+lugar = "mundo"
+f"Hola {lugar}"
 
 # F-string
 variable = f"Hola {pasos_a_dar}"
