@@ -89,6 +89,27 @@ def contar_pares(lista):
     while indice < len(lista):
         if lista[indice] % 2 == 0:
             pares += 1
+        indice += 1
     return pares
 
 print(contar_pares(lista))
+
+
+"""
+Escribí una función promedio_notas()
+Usá un while para acumularlas y calcular el promedio final.
+"""
+
+notas = [2,4,4,8,9]
+
+def promedio_notas(notas):
+    indice = 0
+    suma_notas = 0
+    cantidad_notas = len(notas)
+
+    while indice < cantidad_notas:
+        suma_notas = suma_notas + notas[indice]
+        indice += 1
+    return suma_notas / cantidad_notas
+    
+print(promedio_notas(notas))
