@@ -74,10 +74,21 @@ def contar_vocales_texto(texto):
     cantidad_vocales = 0
     VOCALES = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     while indice < len(texto):
-        if texto[indice] not in VOCALES:
+        if texto[indice] in VOCALES:
             cantidad_vocales += 1
         indice += 1
     return cantidad_vocales
 
 print(contar_vocales_texto(texto))
 
+
+lista = [1,2,3,4,5,6,7]
+def contar_pares(lista):
+    indice = 0
+    pares = 0
+    while indice < len(lista):
+        if lista[indice] % 2 == 0:
+            pares += 1
+    return pares
+
+print(contar_pares(lista))
