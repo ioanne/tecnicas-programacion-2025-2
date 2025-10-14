@@ -74,7 +74,10 @@ def contar_vocales_texto(texto):
     cantidad_vocales = 0
     VOCALES = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     while indice < len(texto):
-        if texto[indice] in VOCALES:
+        if texto[indice] not in VOCALES:
             cantidad_vocales += 1
         indice += 1
     return cantidad_vocales
+
+print(contar_vocales_texto(texto))
+
