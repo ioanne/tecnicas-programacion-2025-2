@@ -64,3 +64,17 @@ palabras = "Uno dos tres"
 
 texto = "Este es un texto de prueba para ver si anda bien."
 print(len(texto.split(" ")))
+
+
+
+texto = "habia una vez una chica"
+
+def contar_vocales_texto(texto):
+    indice = 0
+    cantidad_vocales = 0
+    VOCALES = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    while indice < len(texto):
+        if texto[indice] in VOCALES: # h
+            cantidad_vocales += 1
+        indice += 1
+    return cantidad_vocales
